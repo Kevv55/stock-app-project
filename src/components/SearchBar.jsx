@@ -22,7 +22,7 @@ export const fetchData = async (value) => {
 };
 
 const SearchBar = ({ setSymbol }) => {
-  const [input, setInput] = useState();
+  const [input, setInput] = useState("");
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);

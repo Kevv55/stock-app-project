@@ -1,9 +1,10 @@
-import { Dashboard, ThreeMp } from "@mui/icons-material";
+// import { Dashboard, ThreeMp } from "@mui/icons-material";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Topbar from "./components/global/Topbar";
+import Dashboard from "./scenes/dashboard";
 
 function App() {
   const [theme, colorMode] = useMode();

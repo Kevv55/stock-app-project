@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { ColorModeContext, tokens } from "./../../theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-// import SearchBar from "../../components/SearchBar";
+import SearchBar from "../../components/SearchBar";
 import React from "react";
 
 const Topbar = ({ setSymbol }) => {
@@ -38,7 +38,7 @@ const Topbar = ({ setSymbol }) => {
         backgroundColor={colors.primary[400]}
         borderRadius={"3px"}
       >
-        {/* <SearchBar setSymbol={setSymbol} /> */}
+        <SearchBar setSymbol={setSymbol} />
       </Box>
     </Box>
   );
