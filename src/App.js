@@ -6,16 +6,20 @@ import { useState } from "react";
 import Topbar from "./components/global/Topbar";
 import Dashboard from "./scenes/dashboard";
 import SideBar from "./components/global/Sidebar";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 function App() {
   const [theme, colorMode] = useMode();
   const [symbol, setSymbol] = useState("IBM");
+  const isAboveMediumScreens = useMediaQuery("(min-width:720px)");
+  console.log(isAboveMediumScreens);
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <SideBar />
+          {isAboveMediumScreens ? <SideBar /> : <></>}
           <main className="content">
             <Topbar setSymbol={setSymbol} />
             <Routes>

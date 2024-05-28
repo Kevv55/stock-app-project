@@ -12,6 +12,7 @@ import ImgMediaCard from "../../components/NewsCard";
 // import { newsStructure } from "../../shared/types";
 import Chart from "../../components/Chart";
 import React from "react";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 export const profile = async (symbol) => {
   const KEY = "3webKAWsjx3ZcjQFuTEKw7KnphafhzG8";
@@ -39,6 +40,8 @@ export const fetchNews = async () => {
 };
 
 const Dashboard = ({ symbol }) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  console.log(isAboveMediumScreens);
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
