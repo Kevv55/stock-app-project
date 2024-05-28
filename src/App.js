@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import Topbar from "./components/global/Topbar";
 import Dashboard from "./scenes/dashboard";
+import SideBar from "./components/global/Sidebar";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -14,10 +15,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <SideBar />
           <main className="content">
             <Topbar setSymbol={setSymbol} />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={<Dashboard symbol={symbol} />} />
             </Routes>
           </main>
         </div>

@@ -31,8 +31,8 @@ const Fundamentals = ({ symbol, description }) => {
   }, [symbol]);
 
   return (
-    <Box>
-      <Typography variant="h4" sx={{ marginBottom: "2%" }}>
+    <Box m="20px">
+      <Typography variant="h4" sx={{ marginBottom: "1%" }}>
         Summary
       </Typography>
       <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
@@ -67,7 +67,11 @@ const Fundamentals = ({ symbol, description }) => {
         )}
       </Box>
 
-      <Typography variant="h4" sx={{ marginBottom: "2%", marginTop: "2%" }}>
+      <Typography
+        variant="h4"
+        sx={{ marginBottom: "1%", marginTop: "4%" }}
+        // m="20px"
+      >
         Description
       </Typography>
       <Typography>{description}</Typography>

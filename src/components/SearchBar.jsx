@@ -64,7 +64,7 @@ const SearchBar = ({ setSymbol }) => {
       >
         {showResults ? <ClearIcon /> : <SearchIcon />}
       </IconButton>
-      <Box sx={{ zIndex: 40, position: "fixed" }}>
+      <Box sx={{ zIndex: 40, position: "fixed", width: "100%" }}>
         {loading ? (
           <Box>
             <Typography>Loading...</Typography>

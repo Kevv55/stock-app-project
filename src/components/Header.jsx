@@ -18,6 +18,13 @@ const Header = ({ title, subtitle }) => {
       <Typography variant="h5" color={colors.greenAccent[400]}>
         {subtitle}
       </Typography>
+      <Typography>
+        Be sure to select the ticker of a valid publicly traded company.
+      </Typography>
+      <Typography>
+        For example, try "MSFT", "NVDA", or "AAPL" and don't select invalid
+        variants of the tickers.
+      </Typography>
     </Box>
   );
 };

@@ -37,6 +37,7 @@ const Topbar = ({ setSymbol }) => {
         display={"flex"}
         backgroundColor={colors.primary[400]}
         borderRadius={"3px"}
+        // sx={{ width: "250px" }}
       >
         <SearchBar setSymbol={setSymbol} />
       </Box>

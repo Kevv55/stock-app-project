@@ -10,6 +10,7 @@ import CustomizedMenus from "./DropdownInterval";
 import Fundamentals from "../../components/Fundamentals";
 import ImgMediaCard from "../../components/NewsCard";
 // import { newsStructure } from "../../shared/types";
+import Chart from "../../components/Chart";
 import React from "react";
 
 export const profile = async (symbol) => {
@@ -136,14 +137,14 @@ const Dashboard = ({ symbol }) => {
           )}
 
           {/* <CustomizedMenus setInterval={setInterval} /> */}
-          {/* <Chart
+          <Chart
             setStockData={setStockData}
             stockData={stockData}
             symbol={symbol}
             interval={interval}
             setDataReady={setDataReady}
             dataReady={dataReady}
-          /> */}
+          />
           <Box
             gridColumn="span 2"
             gridRow="span 1"

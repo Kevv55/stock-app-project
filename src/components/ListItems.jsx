@@ -4,7 +4,7 @@ import React from "react";
 
 export default function AlignItemsList({ results, setSymbol }) {
   return (
-    <div style={{ position: "fixed" }}>
+    <div style={{ position: "fixed", width: "100%" }}>
       <List
         sx={{ maxWidth: 200, bgcolor: "background.paper", overflow: "visible" }}
       >
